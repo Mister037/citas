@@ -1,0 +1,141 @@
+/*NAVBAR*/
+.navbar{
+    background-color: black;
+    justify-content: space-between;
+}
+.navbar ul{
+    justify-content: end;
+    list-style: none;
+    display: flex;
+    
+}
+.navbar ul li{
+    display: flex;
+    padding: 20px;
+}
+.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+}
+.navbar-logo .logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+/*END NAVBAR*/
+
+/*LANDING HERO*/
+.container-hero{
+    display:block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    
+  }
+.container-hero h1{
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(to right, #49343d, #006eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+ }
+
+.container-hero p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+  padding: 20px;
+}
+
+.container-hero a{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.container-hero a {
+  color: #ffffff;
+  background-color: #596877;
+  border: none;
+}
+.container-hero a:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+.container-hero a:hover {
+  color: #ffffff;
+  background-color: #525df7;
+  transform: scale(1.1);
+}
+
+.container-hero a:hover:before{
+  width: 200%;
+  height: 200%;
+}
+  /*END HERO*/
+  
+  
